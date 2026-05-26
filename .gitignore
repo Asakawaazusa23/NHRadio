@@ -1,0 +1,47 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+.venv/
+venv/
+env/
+*.so
+
+# --- PyInstaller 构建产物 ---
+*.spec
+build/
+dist/
+_pybuild/
+*.exe
+
+# --- 游戏 Bank 备份 ---
+backup/
+
+# --- 提取的音频文件 ---
+extracted/
+
+# --- 自动生成的 song_map 缓存（可重新生成）---
+config/banks/
+
+# --- 自动生成的 RadioInfo 备份 ---
+config/original_radio_info.xml
+
+# --- 运行时复制的 DLL（tools 目录已有）---
+libogg.dll
+libvorbis.dll
+libmp3lame.dll
+
+# --- 网易云下载锁 ---
+optional/netease_cloud_music.lock
+
+# --- IDE/系统 ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
