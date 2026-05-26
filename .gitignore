@@ -16,6 +16,7 @@ build/
 dist/
 _pybuild/
 NovaHorizonRadio_v*.exe
+NovaHorizonRadio_v*.zip
 
 # --- 游戏 Bank 备份 ---
 backup/

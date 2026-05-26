@@ -255,3 +255,11 @@ python build_exe.py
 
 FMOD Studio API 版权归 Firelight Technologies Pty, Ltd 所有。
 FFmpeg 基于 LGPL/GPL 许可证。
+
+---
+
+## 下载与安装
+
+- **直接下载**：前往 [GitHub Releases](https://github.com/Asakawaazusa23/NHRadio/releases) 下载 `NovaHorizonRadio_v1.0.0.zip`
+- **解压后**：将整个 `NovaHorizonRadio` 文件夹放到 `ForzaHorizon6` 游戏目录下
+- **运行**：双击 `NovaHorizonRadio_v1.0.0.exe` 即可
