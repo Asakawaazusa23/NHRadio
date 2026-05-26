@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+venv/
+
+# 临时文件
+backup/
+extracted/
+*.bak
+*.tmp
+
+# 测试脚本（不上传）
+test_*.py
+analyze_*.py
+debug_*.py
+diagnose_*.py
+check_*.py
+compare_*.py
+quick_decode.py
+save_snapshots.py
+snapshot_*.txt
+final_validation.py
+ultimate_diagnosis.py
+_test_auto.py
+
+# 临时修复脚本
+恢复并重新替换.py
+重新替换R6.py
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 重复库
+fsb5_lib/
+libogg.dll
+libvorbis.dll
+
+# 旧版本EXE
+NovaHorizonRadio_v1.0.0.exe
+
+# Bank文件（太大，用户自行替换）
+*.assets.bank
+*.assets.bank.*

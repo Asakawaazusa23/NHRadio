@@ -1,0 +1,12 @@
+{
+  "project": "NovaHorizonRadio",
+  "version": "1.0.0",
+  "tools": {
+    "ffmpeg": "tools/ffmpeg.exe",
+    "fsbankcl": "tools/fsbankcl.exe",
+    "fsbext": "tools/fsbext.exe"
+  },
+  "backup_dir": "backup",
+  "extracted_dir": "extracted",
+  "song_maps_dir": "config/banks"
+}
