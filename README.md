@@ -93,16 +93,7 @@ NovaHorizonRadio/
 
 ## 使用到的第三方项目
 
-### Python 依赖
-
-| 包名 | 用途 |
-|---|---|
-| **PySide6** (6.11.0) | Qt for Python 绑定，提供完整的 GUI 界面（暗色主题） |
-| **python-fsb5** (HearthSim) | FSB5 音频容器解析库，用于提取 Bank 中的 Ogg 音频 |
-| **requests** | HTTP 库，用于网易云音乐 API 调用 |
-| **PyInstaller** (6.20.0) | 将 Python 项目打包为独立 EXE |
-
-### 命令行工具
+### 命令行工具（已集成在 tools/ 目录）
 
 | 工具 | 来源 | 用途 |
 |---|---|---|
@@ -121,6 +112,8 @@ NovaHorizonRadio/
 ## 使用说明书
 
 ### 快速开始
+
+> 不需要安装 Python。仓库已包含打包好的 `NovaHorizonRadio_v1.0.0.exe`，下载整个仓库解压即可使用。
 
 ```
 1. 将 NovaHorizonRadio 文件夹放到 ForzaHorizon6 游戏目录下
@@ -214,7 +207,7 @@ Gacha City Radio (R6_Tracks_CU1)  [309.1 MB]
 
 ### 注意事项
 
-1. **文件编号**：音频文件不需要严格编号。`D:\CloudMusic` 里的 `歌曲名 - 歌手.mp3` 格式也能正常识别
+1. **文件编号**：音频文件不需要编号。音乐文件夹里的 `歌曲名 - 歌手.mp3` 格式才能正常识别
 2. **编码耗时**：编码一首歌约需 15-30 秒（取决于 CPU 性能），25 首歌大约需要 10-15 分钟
 3. **备份恢复**：替换前会自动备份原 Bank 文件到 `backup/` 目录，文件名格式为 `{BankName}.{时间戳}.assets.bank`
 4. **Bank 变体**：每个电台有多个变体（`CU1`、`CU2`、`Disk`、`PDLC1`、`PDLC2`），需要分别替换
@@ -222,7 +215,21 @@ Gacha City Radio (R6_Tracks_CU1)  [309.1 MB]
 
 ---
 
-## 依赖安装（如需重新打包）
+## 进阶：自行打包 Python 源码
+
+> **普通用户不需要这一步。** 仓库的 `NovaHorizonRadio_v1.0.0.exe` 已可直接使用。
+> 以下内容面向想修改代码或自行打包的开发者。
+
+### Python 依赖
+
+| 包名 | 用途 |
+|---|---|
+| **PySide6** (6.11.0) | Qt for Python 绑定，提供完整的 GUI 界面 |
+| **python-fsb5** (HearthSim) | FSB5 音频容器解析库 |
+| **requests** | HTTP 库，用于网易云音乐 API 调用 |
+| **PyInstaller** (6.20.0) | 将 Python 项目打包为独立 EXE |
+
+### 打包命令
 
 ```bash
 # 创建虚拟环境
@@ -237,6 +244,8 @@ pip install pyinstaller
 # 打包
 python build_exe.py
 ```
+
+打包完成后，`NovaHorizonRadio_v1.0.0.exe` 会生成在当前目录下，与 `tools/` `config/` 等文件夹同级。
 
 ---
 
